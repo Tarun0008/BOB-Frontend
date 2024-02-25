@@ -335,11 +335,7 @@ const Navbar = () => {
           backgroundColor={background}
         >
           <Box display="flex" justifyContent="flex-end" p="1rem">
-            <IconButton
-              onClick={() => setIsMobileMenuToggled(!isMobileMenuToggled)}
-            >
-              <Close />
-            </IconButton>
+           
           </Box>
 
           <FlexBetween
@@ -349,12 +345,7 @@ const Navbar = () => {
             alignItems="center"
             gap="3rem"
           >
-            <IconButton
-              onClick={() => dispatch(setMode())}
-              sx={{ fontSize: "25px" }}
-            >
-              <DarkMode sx={{ fontSize: "25px" }} />
-            </IconButton>
+           
             <IconButton onClick={handleMessagesClick}>
               <Message sx={{ fontSize: "25px" }} />
             </IconButton>
